@@ -4,16 +4,7 @@
 }
 
 /*   font-family: "Open Sans", serif; */
-.nav-title{
-    font-size: 45px;
-    font-weight: 800;
-    font-family: "Open Sans", serif;
-    color: #181818;
-    margin-left: 226px;
-}
-.nav-title span{
-    color: #FD6E0A;
-}
+
 :root{
     --primary-color: #181818;
     --secondary-color:#FD6E0A;
@@ -23,6 +14,17 @@
     --backgroud-color:#FFF8F3;
     --primary-font:"Open Sans", serif;
 
+}
+/* nav section css start here */
+.nav-title{
+    font-size: 45px;
+    font-weight: 800;
+    font-family: "Open Sans", serif;
+    color: #181818;
+    margin-left: 226px;
+}
+.nav-title span{
+    color: #FD6E0A;
 }
 nav{
     display: flex;
@@ -54,6 +56,10 @@ font-weight: 400;
     padding: 18px 35px 19px 36px;
     border: none;
 }
+/* nav section css end here */
+
+/* banner section code start here */
+
 .banner{
     display: flex;
     justify-content: space-between;
@@ -84,9 +90,15 @@ display: flex;
 }
 .banner-title .btn{
 margin-left: 230px;
-padding: 19px 23px 18px 58px;
+padding: 19px 23px 18px 48px;
 margin-right: 30px;
 } 
+.btn i{
+    padding-right: 10px;
+}
+.btn1 i{
+    padding-right: 10px;
+}
 .banner-title .btn1{
     outline: 0;
     font-family: var(--primary-font);
@@ -94,12 +106,10 @@ margin-right: 30px;
     font-size: 20px;
     background: var(--backgroud-color);
     color: var(--secondary-color);
-    padding: 19px 23px 18px 58px;
+    padding: 19px 23px 18px 48px;
     border: none;
 }
-.banner-btn{
 
-}
 .b-img img{
     width: 585px;
 }
@@ -110,6 +120,9 @@ margin-right: 30px;
     margin-top: 190px;
 
 }
+/* banner section code end here */
+
+/* header img section */
 
 .header{
     background: url(../image/developer.png), url(../image/header_bg.png);
@@ -118,6 +131,7 @@ margin-right: 30px;
     margin-top: 47px;
 }
 
+/* main section about section css start here */
 main{
     max-width: 1140px;
     margin: 0 auto;
@@ -167,7 +181,9 @@ main{
     color: var(--third-color);
     line-height: 30px;
 }
+/* main section about section css end here */
 
+/* main skill section css start here */
 .skills{
 margin-top: 130px;
 
@@ -215,7 +231,9 @@ padding: 30px 30px 30px 33px;
     line-height: 28px;
     margin-top: 20px;
 }
+/* main skill section css end here */
 
+/* main resume section css start here */
 .resume{
 margin-top: 130px;
 }
@@ -263,6 +281,152 @@ margin-top: 130px;
 }
 hr{
 margin-bottom: 30px;
+
+}
+.resume-btn{
+    margin-top: 50px;
+    text-align: center;  
+}
+/* main resume section css end here */
+
+/* footer section css start here */
+footer{
+    background: var(--backgroud-color);
+    margin-top: 113px; 
+    display: flex;
+    justify-content: space-around;
+    padding: 124px 230px 0px 230px;
+}
+.footer-column{
+    width: 50%;
+}
+.footer-title{
+    font-size: 35px;
+    font-weight: bold;
+    font-family: var(--primary-font);
+    color: var(--primary-color);
+   
+}
+.footer-description{
+    margin-top: 20px;
+    color: var(--third-color);
+    font-size: 16px;
+    font-family: var(--primary-font);
+    line-height: 28px;
+    margin-bottom: 30px;
+}
+.footer-icon{
+
+}
+lebel{
+   display: block; 
+   margin-bottom: 24px;
+}
+footer input[type="text"], footer input[type="email"] {
+    padding: 18px 0px 18px 30px;
+    width: 100%;
+    height: 64px;
+    border-radius: 5px;
+    border: none;
+    background: var(--button-color);
+    outline: none;
+    font-size: 16px;
+    line-height: 28px;
+    font-family: var(--primary-font);
+}
+footer textarea {
+    padding: 18px 0px 134px 30px;
+    width: 100%;
+    height: 64px;
+    border-radius: 5px;
+    border: none;
+    background: var(--button-color);
+    outline: none;
+    font-size: 16px;
+    line-height: 28px;
+    font-family: var(--primary-font);
+    margin-bottom: 24px;
+}
+/* footer section css start here */
+
+/* ----------------------
+------------------------
+Responsive code start here 
+--------------------------
+--------------------------
+*/
+
+@media screen and (max-width:576px) {
+    body{
+        overflow-x:hidden ;
+    }
+    nav, nav ul{
+     flex-direction: column;
+     gap: 30px;
+    }
+.nav-title, .banner-title span, .banner-title h1,
+.banner-title p, .banner-btn .btn{
+    margin-left: 100px;
+}
+
+.btn {
+    font-size: 18px;
+   padding: 18px 14px 18px 14px;
+    border-radius: 5px;
+}
+
+
+
+.banner-title .btn {
+       padding: 18px 14px 18px 14px;
+        margin-right: 10px;
+        margin-top: 10px;
+        font-size: 15px;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+    .banner-title {
+        height: 95vh;
+        display: table-cell;
+        vertical-align: middle;
+        margin-top: 120px;
+    }
+    .banner-title h1 {
+       
+        font-size: 70px;
+    
+    }
+
+    .banner-title .btn1{
+        padding: 18px 27px 18px 27px; 
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    .about {
+        padding: 100px 50px 100px 50px;
+     
+    }
+    .about-item {
+        margin-bottom: 20px;
+    }
+    .skill-description {  
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+        margin: 20px auto;
+    }
+    .banner, .cards, .resume-container, footer, .about-items{
+        flex-direction: column;
+        
+    } 
+    footer{
+    padding: 50px 40px 50px 40px;}
+    .footer-column {
+        width: 100%; 
+        margin-bottom: 20px;
+    }
+    
 }
 
 
